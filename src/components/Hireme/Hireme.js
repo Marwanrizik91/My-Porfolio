@@ -6,7 +6,7 @@ function Hireme() {
     <div className="hireme">
       <div id="hireme" className="hireme__container">
         <h1 className="hireme__title">Hire me!</h1>
-        <img src="/img/me-transparent.svg" alt="me" />
+        <img src="/img/me-transparent.png" alt="me" />
         <p className="hireme__text">
           If you happen to like my work, please don't hesitate to contact me or
           send me a message on Linkedin
