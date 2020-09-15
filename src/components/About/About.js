@@ -40,13 +40,13 @@ function About() {
               <img className="about__Grid3" src="/img/material-ui.svg" alt="" />
               <img className="about__Grid4" src="/img/html-5.svg" alt="" />
               <img className="about__Grid5" src="/img/css.svg" alt="" />  
-              <img className="about__Grid6" src="/img/node-js.svg" alt="" />
-              <img className="about__Grid7" src="/img/express-js.svg" alt="" />
+              <img className="about__Grid6" src="/img/nodejs.png" alt="" />
+              <img className="about__Grid7" src="/img/expressjs.svg" alt="" />
               <img className="about__Grid8" src="/img/firebase-icon.svg" alt="" />
               <img className="about__Grid9" src="/img/mongodb-icon.svg" alt="" />
               <img className="about__Grid10" src="/img/postgresql-icon.svg" alt="" />
           </div>
-          </div>
+          </div> 
       </section>
     </div>
   );

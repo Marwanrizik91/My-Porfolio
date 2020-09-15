@@ -138,6 +138,7 @@
 
 .about__Grid7 {
   grid-area: 3 / 7;
+  /* width: 100px !important; */
 }
 
 .about__Grid8 {
