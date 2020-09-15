@@ -18,13 +18,13 @@ function Hireme() {
         </h3>
         <div className="hireme__buttons">
           <div className="hireme__button">
-            <a href="https://www.linkedin.com/in/marwan-rizik-8204971ab/">
+            <a href="https://www.linkedin.com/in/marwan-rizik-8204971ab/" target="_blank" rel="noopener noreferrer">
               My Linkedin
             </a>
           </div>
 
           <div className="hireme__button">
-            <a href="https://github.com/Marwanrizik91">My Github</a>
+            <a href="https://github.com/Marwanrizik91" target="_blank" rel="noopener noreferrer">My Github</a>
           </div>
         </div>
       </div>

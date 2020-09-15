@@ -49,10 +49,10 @@ function MyProjects() {
                 <p>{description}</p>
               </header>
               <div class="tags">
-                <a className={`${!code && "hideBorder"}`} href={code}>
+                <a className={`${!code && "hideBorder"}`} href={code} target="_blank" rel="noopener noreferrer">
                   {code && "Code"}
                 </a>
-                <a className={`${!liveSite && "hideBorder"}`} href={liveSite}>
+                <a className={`${!liveSite && "hideBorder"}`} href={liveSite} target="_blank" rel="noopener noreferrer">
                   {liveSite && "Live"}
                 </a>
               </div>

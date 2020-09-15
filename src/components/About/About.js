@@ -7,12 +7,12 @@ function About() {
       <section className="about__firstSection">
           <div className="about__leftMenu">
             
-            <a href="https://www.linkedin.com/in/marwan-rizik-8204971ab/">
+            <a href="https://www.linkedin.com/in/marwan-rizik-8204971ab/" target="_blank" rel="noopener noreferrer">
 
             <img src="/img/linkedin.svg" alt="linkedin" />
             </a>
 
-            <a href="https://github.com/Marwanrizik91">
+            <a href="https://github.com/Marwanrizik91" target="_blank" rel="noopener noreferrer">
 
             <img src="/img/github.svg" alt="github" />
             </a>
