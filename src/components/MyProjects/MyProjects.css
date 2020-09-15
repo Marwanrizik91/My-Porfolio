@@ -1,9 +1,13 @@
 .myProjects {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    /* background-image: linear-gradient( to right,#000000, #242424, #474747, #797979, #9c9c9c,#9c9c9c,#797979,#474747,#242424, #000 ); */
+    background-color: #2E4052;
 }
 
 .myProjects__container {
+    position: relative;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -11,12 +15,39 @@
     
 }
 
+.myProjects__textAndPhoto {
+    width: 100%;
+    max-height: 60vh;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+
+}
+
 .myProjects__container > h1 {
-    color: var(--blue-color);
+    color: white;
+    font-size: 3.5vw;
+}
+
+.myProjects__textAligner {
+    color: white;
+    font-size: 2.5vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myProjects__textAndPhoto > img {
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
 }
 
 .myProjects__cardsList {
-    max-width: var(--max-width);
+    max-width: 85vw;
     display: flex;
     justify-content: center;
     padding: 3rem;
@@ -27,9 +58,9 @@
 .card {
     position: relative;
     flex-direction: column;
-    height: 350px;
-    width: 400px;
-    max-width: 250px;
+    height: 65vh;
+    width: 30vw;
+    /* max-width: 250px; */
     padding: 2px;
     border-radius: 3px;
     background: #0e0e0f;

@@ -39,7 +39,7 @@ function MyProjects() {
   return (
     <div id="projects" className="myProjects">
       <div className="myProjects__container">
-        <h1>Projects I've worked on</h1>
+          <h1>Projects I've worked on</h1>
         <section className="myProjects__cardsList">
           {projects.map(({ name, description, code, liveSite, img }) => (
             <article key={name} class="card">
