@@ -1,10 +1,16 @@
+:root {
+  --blue-color: #FFC857;
+  --max-width: 1200px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: linear-gradient(to bottom, rgb(85, 107, 96) , rgb(53, 31, 93), rgb(31, 34, 51)); */
+  /* background-image: linear-gradient(to bottom, rgb(49, 46, 46) , rgb(34, 11, 77), rgb(12,9,5)); */
+
 }
 
 code {

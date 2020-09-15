@@ -1,0 +1,38 @@
+.header__logo {
+  width: 40px;
+  height: 30px;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: -20px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  max-width: var(--max-width);
+
+}
+
+.header__items {
+    display: flex;
+    width: 95%;
+    gap: 30px;
+    
+}
+
+.header__items > a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__labels:hover {
+  cursor: pointer;
+  color: var(--blue-color);
+}

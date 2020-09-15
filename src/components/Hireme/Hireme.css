@@ -1,0 +1,55 @@
+.hireme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hireme__container{
+    max-width: var(--max-width);
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hireme__title {
+    color: var(--blue-color);
+}
+
+.hireme__text {
+    color: black;
+    width: 90%;
+}
+
+.hireme__container > h3 {
+    width: 90% ;
+}
+
+.hireme__buttons {
+    display: flex;
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.hireme__button > a{
+    text-decoration: none;
+    color: black;
+}
+
+.hireme__button {
+    background: linear-gradient(to top, #FFC757,
+    #FFC857,
+    #FFC957,
+    #fdcc6a,
+    #ffd685,
+    #fde2ac);
+    padding: 10px;
+    border-radius: 20px;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
