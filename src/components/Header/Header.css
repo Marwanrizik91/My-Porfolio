@@ -8,7 +8,10 @@
   display: flex;
   justify-content: center;
   background-color: white;
-  position: sticky !important;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid black;
 }
 
 .header__container {
@@ -23,7 +26,7 @@
 .header__items {
     display: flex;
     width: 100%;
-    gap: 30px;
+    gap: 60px;
     
 }
 
