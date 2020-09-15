@@ -37,5 +37,5 @@
 
 .header__labels:hover {
   cursor: pointer;
-  color: var(--blue-color);
+  color: var(--primary-color);
 }
