@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyProjects.css";
+import { deepEqual  } from 'deep-equal'
 
 const projects = [
   {
@@ -36,11 +37,57 @@ const projects = [
 ];
 
 function MyProjects() {
+
+  const [carouselElement, setCarouselElement] = useState(projects[0])
+
+  const setNextElement = () => {
+    const atIndex = projects.indexOf(carouselElement)
+    if(atIndex === projects.length - 1){
+
+      setCarouselElement(projects[0])
+    } else {
+
+      setCarouselElement(projects[atIndex + 1])
+    }
+  }
+
+  const setPreviousElement = () => {
+    const atIndex = projects.indexOf(carouselElement)
+    if(atIndex === 0){
+      setCarouselElement(projects[projects.length - 1])
+    } else {
+      setCarouselElement(projects[atIndex - 1])
+    }
+  }
+
+  
   return (
+    
     <div id="projects" className="myProjects">
       <div className="myProjects__container">
           <h1>Projects I've worked on</h1>
+          <div className="myProjects__carousel">
+          <article key={carouselElement.name} class="carousel__Element">
+              <img src={carouselElement.img ? carouselElement.img : "/img/default.jpg"} alt="background" />
+              <header class="card-header">
+                <p>{carouselElement.name}</p>
+                <p>{carouselElement.description}</p>
+              </header>
+              <div class="tags">
+                <a className={`${!carouselElement.code && "hideBorder"}`} href={carouselElement.code} target="_blank" rel="noopener noreferrer">
+                  {carouselElement.code && "Code"}
+                </a>
+                <a className={`${!carouselElement.liveSite && "hideBorder"}`} href={carouselElement.liveSite} target="_blank" rel="noopener noreferrer">
+                  {carouselElement.liveSite && "Live"}
+                </a>
+              </div>
+              <div className="carousel__RightArrow" onClick={setNextElement} ></div>
+              <div className="carousel__LeftArrow" onClick={setPreviousElement}></div>
+            </article>
+          </div>
+          
         <section className="myProjects__cardsList">
+
           {projects.map(({ name, description, code, liveSite, img }) => (
             <article key={name} class="card">
               <img src={img ? img : "/img/default.jpg"} alt="background" />

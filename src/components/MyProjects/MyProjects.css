@@ -1,107 +1,161 @@
 .myProjects {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: #2E4052;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2e4052;
+}
+
+.myProjects__carousel {
+  display: none;
 }
 
 .myProjects__container {
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .myProjects__container > h1 {
-    color: white;
-    font-size: 3.5vw;
+  margin-top: 30px;
+  color: white;
+  font-size: 3.5vw;
 }
 
 .myProjects__cardsList {
-    max-width: 85vw;
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-    margin-bottom: 30px;
-    box-sizing: content-box;
+  max-width: 85vw;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  box-sizing: content-box;
 }
 
 .card {
-    position: relative;
-    flex-direction: column;
-    height: 65vh;
-    width: 30vw;
-    padding: 2px;
-    border-radius: 3px;
-    background: #0e0e0f;
-    box-shadow: -1rem 0 3rem #000;
-    transition: .2s;
+  position: relative;
+  flex-direction: column;
+  height: 65vh;
+  width: 30vw;
+  padding: 2px;
+  border-radius: 3px;
+  background: #0e0e0f;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.2s;
 }
 
 .hideBorder {
-    border: unset !important;
+  border: unset !important;
 }
 
 .tags {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-self: flex-end;
 }
 
 article img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    border-radius: 3px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 3px;
 }
 
 .card-header {
-    position: absolute;
-    top: 20px;
-    color: white;
+  position: absolute;
+  top: 20px;
+  color: white;
 }
 
 .tags > a {
-    text-decoration: none;
-    color: white;
-    border: 2px solid rgb(245, 237, 237);
-    border-radius: 20px;
-    padding: 3px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgb(245, 237, 237);
+  border-radius: 20px;
+  padding: 3px;
 }
 
 .tags > a:hover {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .card:hover {
-    transform: translateY(-1rem);
+  transform: translateY(-1rem);
 }
 
-.card:focus-within~.card, .card:hover~.card {
-    transform: translateX(80px);
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(80px);
 }
 
 .card:not(:first-child) {
-    margin-left: -80px;
+  margin-left: -80px;
 }
 
-@media screen and (max-width: 600px) {
-    .myProjects__cardsList {
-        max-width: 400px !important;
-    }
+@media screen and (max-width: 700px) {
+  .myProjects__cardsList {
+    display: none;
+  }
+  .myProjects__container > h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .myProjects__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .myProjects__carousel {
+    position: relative;
+    display: initial;
+    height: 75vh;
+    width: 90%;
+  }
+
+  .card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-header > p {
+      margin: 10px;
+  }
+
+  .carousel__Element {
+    height: 100%;
+  }
+
+  .carousel__RightArrow {
+    position: absolute;
+    background-image: url("/img/next.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vw;
+    width: 10vw;
+    top: 50%;
+    right: 0;
+  }
+  .carousel__LeftArrow {
+    position: absolute;
+    background-image: url("/img/previous.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vw;
+    width: 10vw;
+    top: 50%;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .myProjects__cardsList {
-        max-width: 600px;
-    }
+  .myProjects__cardsList {
+    position: relative;
+    max-width: 600px;
+  }
 }
-

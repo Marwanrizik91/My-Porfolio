@@ -19,8 +19,6 @@
   align-items: center;
   position: sticky;
   width: 100%;
-  /* max-width: var(--max-width); */
-
 }
 
 .header__items {
@@ -38,4 +36,13 @@
 .header__labels:hover {
   cursor: pointer;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .header__items > a {
+    font-size: 80%;
+  }
+  .header__container > img {
+    width: 20px;
+  }
 }

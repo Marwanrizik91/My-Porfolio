@@ -28,13 +28,13 @@
 }
 
 .hireme__text {
-    font-size: 2vw;
+    font-size: 3.2vw;
     color: white;
     width: 90%;
 }
 
 .hireme__container > h3 {
-    font-size: 2vw;
+    font-size: 3.2vw;
     color: white;
     width: 90% ;
 }
@@ -47,7 +47,7 @@
     gap: 30px;
 }
 
-.hireme__button > a{
+.hireme__button > a {
     text-decoration: none;
     color: white;
 }
@@ -66,4 +66,22 @@
     justify-content: center;
     align-items: center;
     border: 2px solid white;
+}
+
+@media screen and (max-width: 700px) {
+    .hireme__container > img {
+        width: 250px;
+    }
+
+    .hireme__title {
+        font-size: 25px;
+    }
+
+    .hireme__button {
+        width: 90px;
+    }
+
+    .hireme__button > a {
+        font-size: 14px;
+    }
 }
