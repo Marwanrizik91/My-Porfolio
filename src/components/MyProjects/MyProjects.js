@@ -39,14 +39,17 @@ const projects = [
 function MyProjects() {
 
   const [carouselElement, setCarouselElement] = useState(projects[0])
+  const [clickDirection, setClickDirection] = useState(undefined)
 
   const setNextElement = () => {
     const atIndex = projects.indexOf(carouselElement)
     if(atIndex === projects.length - 1){
 
+      setClickDirection(true)
       setCarouselElement(projects[0])
     } else {
 
+      setClickDirection(true)
       setCarouselElement(projects[atIndex + 1])
     }
   }
@@ -54,8 +57,10 @@ function MyProjects() {
   const setPreviousElement = () => {
     const atIndex = projects.indexOf(carouselElement)
     if(atIndex === 0){
+      setClickDirection(false)
       setCarouselElement(projects[projects.length - 1])
     } else {
+      setClickDirection(false)
       setCarouselElement(projects[atIndex - 1])
     }
   }
@@ -67,7 +72,7 @@ function MyProjects() {
       <div className="myProjects__container">
           <h1>Projects I've worked on</h1>
           <div className="myProjects__carousel">
-          <article key={carouselElement.name} class="carousel__Element">
+          <article key={carouselElement.name} className={`carousel__Element ${clickDirection? 'right' : 'left'}`}>
               <img src={carouselElement.img ? carouselElement.img : "/img/default.jpg"} alt="background" />
               <header class="card-header">
                 <p>{carouselElement.name}</p>
