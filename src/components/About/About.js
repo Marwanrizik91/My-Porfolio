@@ -31,7 +31,7 @@ function About() {
         <div className="about__secondContainer">
           <div className="about__detailsText">
               <h2>What technologies do I work with?</h2>
-              <p>Just hire me!</p>
+//               <p>Just hire me!</p>
           </div>
 
           <div className="about_GridSection">
