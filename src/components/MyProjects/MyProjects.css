@@ -67,8 +67,14 @@ article img {
 
 .card-header {
   position: absolute;
-  top: 20px;
+  top: 0px;
   color: white;
+}
+
+.card-header > div {
+  background-color: #000000;
+  width: 100%;
+  padding: 1px 0;
 }
 
 .tags > a {

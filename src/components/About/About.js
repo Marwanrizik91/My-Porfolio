@@ -30,7 +30,7 @@ function About() {
       <section className="about__secondSection">
         <div className="about__secondContainer">
           <div className="about__detailsText">
-              <h2>What technologies do I work with?</h2>
+              <h2>Technologies I work with</h2>
           </div>
 
           <div className="about_GridSection">

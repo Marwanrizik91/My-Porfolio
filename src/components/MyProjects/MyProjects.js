@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./MyProjects.css";
-import { deepEqual  } from 'deep-equal'
 
 const projects = [
   {
     name: "Blood donor - Front end",
     description:
-      "Reminds the user when to donate blood, and shows him the nearest location",
+      "Reminds the user when to donate blood, and shows him the nearest location - Mobile only!",
     code: "https://github.com/startach/blood-donor-frontend",
     liveSite: "https://blood-donor.netlify.app/",
     img: "/img/BloodDonor.png",
@@ -14,14 +13,14 @@ const projects = [
   {
     name: "Blood donor - Back end",
     description:
-      "Reminds the user when to donate blood, and shows him the nearest location",
+      "Back end for the Blood Donor Mobile web application!",
     code: "https://github.com/startach/blood-donor-backend",
     liveSite: "",
     img: "",
   },
   {
     name: "Messaging App",
-    description: "Full stack messaging app. Node, React and Postgres",
+    description: "Full stack messaging app. Node, React and Postgres.",
     code: "https://github.com/Marwanrizik91/Marwan-Rizik-27-7-2020",
     liveSite: "https://herolo-test.netlify.app/",
     img: "/img/messagingApp.png",
@@ -75,7 +74,9 @@ function MyProjects() {
           <article key={carouselElement.name} className={`carousel__Element ${clickDirection? 'right' : 'left'}`}>
               <img src={carouselElement.img ? carouselElement.img : "/img/default.jpg"} alt="background" />
               <header class="card-header">
-                <p>{carouselElement.name}</p>
+                <div>
+                <h3>{carouselElement.name}</h3>
+                </div>
                 <p>{carouselElement.description}</p>
               </header>
               <div class="tags">
@@ -97,7 +98,9 @@ function MyProjects() {
             <article key={name} class="card">
               <img src={img ? img : "/img/default.jpg"} alt="background" />
               <header class="card-header">
-                <p>{name}</p>
+              <div>
+                <h4>{carouselElement.name}</h4>
+                </div>
                 <p>{description}</p>
               </header>
               <div class="tags">
