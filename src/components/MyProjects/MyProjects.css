@@ -66,6 +66,10 @@ article img {
 }
 
 .card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 0px;
   color: white;
@@ -123,13 +127,6 @@ article img {
     width: 90%;
   }
 
-
-  .card-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .card-header > p {
       margin: 10px;
   }
