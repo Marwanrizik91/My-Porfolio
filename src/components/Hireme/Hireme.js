@@ -8,8 +8,9 @@ function Hireme() {
         <h1 className="hireme__title">Hire me!</h1>
         <img src="/img/me-transparent.png" alt="me" />
         <p className="hireme__text">
-          If you happen to like my work, please don't hesitate to contact me or
-          send me a message on Linkedin
+          Send me an email!
+        <br/>
+          You can also find me on LinkedIn and check my process on Github!
         </p>
         <h3>
           Contact:
